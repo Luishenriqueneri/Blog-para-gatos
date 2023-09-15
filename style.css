@@ -12,7 +12,7 @@
 }
 
 body{
-  max-width: 35rem;
+  max-width: 43rem;
   display: flex;
   flex-direction: column;
   margin-inline: auto;
@@ -52,6 +52,10 @@ header{
   border-radius: 50%;
 }
 
+.cat {
+width: 100%;
+}
+
 h1{
   margin-top: 3.1rem;
   padding-left: 2.2rem;
@@ -61,6 +65,7 @@ h1{
 }
 
 .like{
+  width: 100%;
   padding-left: 2.2rem;
   padding-right: 31.6rem;
   margin-bottom: 3.1rem;
