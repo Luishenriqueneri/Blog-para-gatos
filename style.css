@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+
+body{
+  max-width: 43rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.6rem;
+  background-color: #065E7C;
+  padding: 1.2rem 2.8rem;
+}
+
+.input-wrapper label{
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  }
+
+  .input-wrapper input{
+    width: 100%;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    background-color: white;
+    border: 0;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h1{
+  margin-top: 3.1rem;
+  padding-left: 2.2rem;
+  padding-right: 6.6rem;
+  margin-bottom: .8rem;
+  font-size: 2.4rem;
+}
+
+.like{
+  padding-left: 2.2rem;
+  padding-right: 31.6rem;
+  margin-bottom: 3.1rem;
+}
+
+p{
+  padding-left: 2.2rem;
+  padding-right: 2.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 3.4rem;
+}
+
+h2{
+  font-size: 2.4rem;
+  padding-left: 2.2rem;
+  padding-right: 14.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.item img{
+  width: 110%;
+  border-radius: 0.8rem;
+}
+
+
+.item p{
+  font-size: 1.4rem;
+}
+
+.item h2{
+font-size: 1.8rem;
+gap: 1.6rem;
+font-weight: 800;
+margin: 0;
+width: 100%; /* Faz o h2 ocupar 100% da largura da coluna */
+white-space: nowrap; /* Impede que o título quebre em várias linhas */
+overflow: hidden; /* Oculta qualquer parte do título que não caiba na largura */
+text-overflow: ellipsis; /* Adiciona reticências (...) se o título for muito longo */
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(5, 10.2rem);
+  row-gap: 1.0rem;
+  column-gap: .8rem;
+  margin-bottom: 3.9rem;
+  margin-left: 2.2rem;
+  margin-right: 2.5rem;
+}
+
+.item h2, p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p{
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+footer{
+  position: relative;
+padding:2.6rem 1.6rem ;
+background-color: #387E96;
+bottom: 0;
+width: 100%;
+}
+
+
+@media(min-width: 1120px){
+
+  body{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  :root{
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: auto;
+    background-color: #065E7C;
+    padding-left: 11.2rem;
+    padding-right: 11.2rem;
+  }
+
+  
+  .input-wrapper input{
+    width: 100%;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    background-color: white;
+    border: 0;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .titulo-dislike{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 62.0rem;
+    align-items: center;
+    margin-top: 3.1rem;
+    margin-bottom: 3.1rem;
+  }
+
+  .item img{
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+  
+  .item h2, p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    .input-wrapper input{
+      width: 108.3rem;
+    }
+
+    .cat {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .container-desktop{
+      padding-left: 10.9rem;
+      padding-right: 11rem;
+      display: grid;
+      grid-template-columns: 70% 30%;  
+      column-gap: 3.4rem;
+    margin-bottom: 3.9rem;
+    }
+    
+    .item-desktop{
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end:2;
+     margin-top: 4.4rem;
+    }
+
+    main{
+      margin-top: 4.9rem;
+    }
+
+    h1{
+      white-space: nowrap;
+    }
+
+
+}
